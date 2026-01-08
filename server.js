@@ -7,6 +7,7 @@
  *************************/
 const express = require("express");
 const app = express();
+const mongodb = require('./data/database');
 
 /* ***********************
  * Routes
@@ -22,4 +23,11 @@ const port = process.env.PORT || 3000;
 /* ***********************
  * Log statement to confirm server operation
  *************************/
-app.listen(port, () => {console.log(`app listening on ${port}`)})
+mongodb.initDB((err) => {
+    if(err) {
+        console.log(err);
+    }
+    else {
+        app.listen(port, () => {console.log(`database listening on ${port}`)});
+    }
+});
