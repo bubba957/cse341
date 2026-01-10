@@ -23,11 +23,11 @@ const port = process.env.PORT || 3000;
 /* ***********************
  * Log statement to confirm server operation
  *************************/
-mongodb.initDB((err) => {
-    if(err) {
-        console.log(err);
-    }
-    else {
+// mongodb.initDb((err) => {
+//     if(err) {
+//         console.log(err);
+//     }
+//     else {
         app.listen(port, () => {console.log(`database listening on ${port}`)});
-    }
-});
+//     }
+// });
