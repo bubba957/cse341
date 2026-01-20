@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6962d75b7a9cf21a1a863c06"
+  },
+  "firstName": "Robert",
+  "lastName": "Atkin",
+  "email": "iamatkin@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "01/12/1992"
+},{
+  "_id": {
+    "$oid": "6962d84a7a9cf21a1a863c07"
+  },
+  "firstName": "Jason",
+  "lastName": "Lakis",
+  "email": "videogameagent@hotmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "04/12/1999"
+},{
+  "_id": {
+    "$oid": "6962d8a47a9cf21a1a863c08"
+  },
+  "firstName": "Quincee",
+  "lastName": "Jackson",
+  "email": "wannabepink@yahoo.com",
+  "favoriteColor": "Pink",
+  "birthday": "10/19/1994"
+}]

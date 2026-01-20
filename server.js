@@ -8,10 +8,12 @@
 const express = require("express");
 const app = express();
 const mongodb = require('./data/database');
+const bodyParser = require('body-parser');
 
 /* ***********************
  * Routes
  *************************/
+app.use(bodyParser.json());
 app.use('/', require('./routes'));
 
 /* ***********************
@@ -23,11 +25,11 @@ const port = process.env.PORT || 3000;
 /* ***********************
  * Log statement to confirm server operation
  *************************/
-// mongodb.initDb((err) => {
-//     if(err) {
-//         console.log(err);
-//     }
-//     else {
+mongodb.initDb((err) => {
+    if(err) {
+        console.log(err);
+    }
+    else {
         app.listen(port, () => {console.log(`database listening on ${port}`)});
-//     }
-// });
+    }
+});
