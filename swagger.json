@@ -5,10 +5,11 @@
     "description": "Contacts Api",
     "version": "1.0.0"
   },
-  "host": "cse341-project1-2clo.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/": {
@@ -106,19 +107,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
+                "username": {
                   "example": "any"
                 },
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "name": {
                   "example": "any"
                 },
-                "birthday": {
+                "ipaddress": {
                   "example": "any"
                 }
               }
