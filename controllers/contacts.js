@@ -54,7 +54,7 @@ const updateContact = async (req, res) => {
     } else {
         res.status(500).json(response.error || 'Error occured while updating contact.');
     };
-};
+}; 
 
 const deleteContact = async (req, res) => {
     // swagger.tags = ['Hello World];
